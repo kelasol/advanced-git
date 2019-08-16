@@ -40,3 +40,19 @@ Find her on:
 
 Front End Masters [Video screencast](http://frontendmasters.com/workshops/git-indepth/)
 
+# Annotations
+The way that the rest of the personal notes are structured are by video section. The exercises will be 
+- **myNotes**
+    1. Git Foundations: [git-foundations.md](/)
+    2. Git Areas and Stashing:  
+    3. References, Commits, Branches: references-
+    4. Merging and Rebasing:  
+    5. History and Diffs: 
+    6. Fixing Mistakes
+    7. Rebase and Amend:
+    8. Forks & Remote Repos
+    9. Danger Zone
+    10. Github
+    11. Advanced Github:
+    12. Wrapping Up:
+    - **self-assessment**
