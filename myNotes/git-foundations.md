@@ -62,9 +62,37 @@ Asking Git for the SHA1 of contents:
     - This in turn contains all of the data about our repository
 
 ### Where are the Blobs Stored?
-    - If you tree command in the .git dir. You can see 
-        - Objects
-            - (Starts with 8a) (Directory is first two characters of hash)
-                - file is the rest of the has
+- If you tree command in the .git dir. You can see 
+    - Objects
+         - (Starts with 8a) (Directory is first two characters of hash)
+            - file is the rest of the hash
 
-@@
+### We Need Something Else
+The blob is missing information
+- Filenames
+- directory stuctures
+
+Git stores this information in a **tree**.
+
+### Tree
+A **tree** contains pointers (using SHA1) 
+- to blobs
+- also to other trees
+    - So why to other trees? It's because subdirectories can be nested.
+
+#### Trees also contain metadata
+- **type** of pointer (blob or tree)
+- **filename** or directory name
+- mode (executable file, symbolic link,...)
+- git doesn't store empty directories; it's a limitation in the staging area which only keeps track of files
+
+Trees and Blobs are a _directed graph_.
+
+### Identical Content is Only Stored Once
+Remember how content informs the SHA. Well running that hash on the same content will always return the same SHA. 
+> In Git identitcal content is only stored once. Pointers will point to any repeated content.
+> One of the most critcal features of Git, how Git saves as ton of space. So if we commit a blob or the tree, if it hasn't changed, we're just gonna point to the same copy. Which is why checking out branches in git is super fast.
+
+What is the difference between the blob and the SHA that refers to it?
+
+>  The difference between the blob and the SHA. Is that the blob is the content and the SHA is essentially the key for that piece of content. However, the key is stored within that blob that tells it what content to associate itself with. (I may be misunderstanding this)

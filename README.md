@@ -41,7 +41,20 @@ Find her on:
 Front End Masters [Video screencast](http://frontendmasters.com/workshops/git-indepth/)
 
 # Annotations
-The way that the rest of the personal notes are structured are by video section. The exercises will be 
+ The way that the rest of the personal notes are structured are by video section as organized by FEM. 
+
+## Completetion Status
+[Todo]
+[&#x2714; In Progress] 
+[In Review]
+[Complete]
+
+### Tasks
+- [ ] Phase 1: Finish watching and annotating course
+- [ ] Phase 2: Draft Self-Assessment docs and Scoresheets
+- [ ] Phase 3: Review 
+
+## Table of Contents
 - **myNotes**
     - Git Foundations: [git-foundations.md](/)
     - Git Areas and Stashing:  
