@@ -93,6 +93,7 @@ Remember how content informs the SHA. Well running that hash on the same content
 > In Git identitcal content is only stored once. Pointers will point to any repeated content.
 > One of the most critcal features of Git, how Git saves as ton of space. So if we commit a blob or the tree, if it hasn't changed, we're just gonna point to the same copy. Which is why checking out branches in git is super fast.
 
+![git pointers](https://user-images.githubusercontent.com/5563119/63214169-a3c3fa00-c0c9-11e9-9d93-660929d6b0db.png)
 What is the difference between the blob and the SHA that refers to it?
 
 >  The difference between the blob and the SHA. Is that the blob is the content and the SHA is essentially the key for that piece of content. However, the key is stored within that blob that tells it what content to associate itself with. (I may be misunderstanding this)
