@@ -1,6 +1,5 @@
 ## Self-Assessment & Review of Git Foundations
 ---
-
 <details>
     <summary> <b>How does Git Store Information? </b> </summary>
     In what are essentially key-value pairs: <br>
@@ -8,6 +7,12 @@
         <li> The Value = data  
         <li> The Key = Hash of the Data
     </ul>
+</details>
+
+<details>
+    <summary> <b>Why can a system like Git be referred to as a <i>content addressable</i> system?</b> </summary>
+    This value should always be the same if the given input is the same.
+Sometimes system like this is called a content addressable system and that's because you can also use the content to generate the key.
 </details>
 
 <details>
