@@ -22,5 +22,5 @@ Sometimes system like this is called a content addressable system and that's bec
 
 <details>
     <summary> <b> What is the difference between the blob and the SHA that refers to it?</b></summary>
-    The difference between the blob and the SHA. Is that the blob is the content and the SHA is essentially the key for that piece of content. However, the key is stored within that blob that tells it what content to associate itself with.
+    The difference between the blob and the SHA. Is that the blob is the (I think its more accurate to say that the blob is the direct container of the content in that its the thing actually holding the data, go review thr earlier diagram)content and the SHA is essentially the key for that piece of content. However, the key is stored within that blob that tells it what content to associate itself with.
 </details>
