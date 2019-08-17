@@ -51,3 +51,20 @@ The way that Git stores things is as _Git Objects_ and a very basic one is calle
 
 ### Under the Hood - Git Hash - Object
 Asking Git for the SHA1 of contents:
+- The way that Git does this under the hood is with a plumbing command:
+    ``` [...] git hash-object ---stdin```
+- If you run the hash method on the same object twice you will always get the same result.
+    - blobs usually unique in Git
+    - Likelyhood of collision very small
+
+### Where Does Git Store its Data?
+- In the .git directory when we init
+    - This in turn contains all of the data about our repository
+
+### Where are the Blobs Stored?
+    - If you tree command in the .git dir. You can see 
+        - Objects
+            - (Starts with 8a) (Directory is first two characters of hash)
+                - file is the rest of the has
+
+@@
