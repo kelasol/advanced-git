@@ -97,3 +97,13 @@ Remember how content informs the SHA. Well running that hash on the same content
 What is the difference between the blob and the SHA that refers to it?
 
 >  The difference between the blob and the SHA. Is that the blob is the content and the SHA is essentially the key for that piece of content. However, the key is stored within that blob that tells it what content to associate itself with. (I may be misunderstanding this)
+
+### Other Optimizations - Packfiles, Deltas
+Optimzations are also build on how we work/develop, e.g. contents remain mostly similar
+- Git objects are compressed
+- As files change, their contents remain mostly similar.
+- Git optimizes for this by compressing these files togethwer, into a **Packfile**
+- The **Packfile** stores the object, and **"deltas"**, or the differences between one version of the file and the next.
+
+- Packfiles are generated when:
+    - You have too many objects, during garbage collection, or during a push to a remote.
