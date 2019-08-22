@@ -180,3 +180,29 @@ if we `cat .git/refs/heads/master` we are going to get back a pointer to the SHA
  There are cases where HEAD can point to a commit instead of a branch.
 
  Git only has one HEAD at a given time, if you are wondering what it is you can run `cat .git/HEAD`to find out. HEAD is a pointer to the current branch, in some cases it could also be the current commit.
+
+ ### Working Area, Staging Area, Repository
+ These are the three areas where code lives:
+ 1. Working Area (aka Working Tree)
+ 2. Staging Area (aka Cache or Index)
+ 3. Repository (aka Repo)
+
+#### The Working Area
+- The files in your working area that are _also not_ in the staging area are not handled by git
+- Also called **untracked files**. 
+- working area is like your scratch space, where you can edit/modify/delete content
+
+#### The Staging  Area (aka Index, Cache)
+- What files are going to be part of the next commit
+- The staging area is how git knows what will change between the current commit and the next commit
+
+#### The Repository
+- The files git knows about
+- Contains all of your commits
+- Contain a snapshot of what your working and staging area look like at the time of the commit
+- It's in your `.git` directory
+
+#### Closer Look: The Staging Area
+- The staging area is how git konws what will change between the current commit and the next commit.
+- Tip: a "clean" staging area isn't empty!
+- Consider the baseline staging are as being an exact copy of the latest commit.

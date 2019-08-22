@@ -7,6 +7,19 @@
         <li> The Value = data  
         <li> The Key = Hash of the Data
     </ul>
+    <br>
+     Git stores things as <i>Git Objects</i>: blobs, trees, and commits are all instances of git objects.
+</details>
+
+<details>
+    <summary> <b>What is a blob? What does it hold?</b> </summary>
+    A blob is a type of <i>Git Object</i>. It contains at least 3 other pieces of metadata in addition to the contents of the data itself. <br>
+    <ol> 
+        <li> the indentifier blob
+        <li> the size of the content
+        <li> the \0 delimiter (string terminator in C)
+        <li> the compressed data or content
+    </ol>
 </details>
 
 <details>
@@ -29,3 +42,5 @@ Sometimes system like this is called a content addressable system and that's bec
     <summary> <b> When are Packfiles generated?</b></summary>
      You have too many objects, during garbage collection, or during a push to a remote.
 </details>
+
+ 
