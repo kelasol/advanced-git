@@ -62,10 +62,10 @@ Sometimes system like this is called a content addressable system and that's bec
 <h3><u>Question 8</u></h4>
 <details>
     <summary><b>What else do trees contain?</b></summary>
-    A tree also contains metadata:
+    A tree also contains metadata:<br>
     <span>&#8226;</span> type of pointer (blob or tree)<br>
     <span>&#8226;</span> File name or directory name<br>   
-    <span>&#8226;</span> mode (executable file, symbolic link,...<br>
+    <span>&#8226;</span> mode (executable file, symbolic link)...<br>
 </details>
 
 <h3><u>Question 9 </u></h4>
