@@ -85,5 +85,4 @@ Discard your work:
 - Eventually, they will be garbage collected
 - Git does it's own garbage collection (runs every few weeks, can be run manually)
 - It's possible to recover these after GC (with ref logs, will talk about later)
-
-#### References Exercise 
+ 
