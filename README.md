@@ -1,4 +1,4 @@
-## [Advanced Git In-Depth](https://frontendmasters.com/courses/git-in-depth/)
+# [Advanced Git In-Depth](https://frontendmasters.com/courses/git-in-depth/)
 
 The accompanying exercises for [Nina Zakharenko's](https://twitter.com/nnja) [Git In-Depth Video Workshop](https://frontendmasters.com/courses/git-in-depth/) on Frontend Masters.
 
@@ -6,6 +6,49 @@ The accompanying exercises for [Nina Zakharenko's](https://twitter.com/nnja) [Gi
 
 [Watch the Course here](https://frontendmasters.com/courses/git-in-depth/).
 
+# Annotations
+ Annotations can be found in the myNotes folder. Notes are organzied by video section as structured by FEM. 
+
+## Completetion Status
+[Todo]
+[&#x2714; In Progress] 
+[In Review]
+[Complete]
+
+### Tasks
+- [ ] Phase 1: Finish watching and annotating course
+- [ ] Phase 2: Draft Self-Assessment docs and Scoresheets
+- [ ] Phase 3: Review 
+
+## Table of Contents
+- **myNotes**
+    - Git Foundations: [1-git-foundations.md](https://github.com/kelasol/advanced-git/blob/master/myNotes/1-git-foundations.md)
+    - Git Areas and Stashing: [2-SA_Git_Areas_and_Stashing.md](https://github.com/kelasol/advanced-git/blob/master/myNotes/2-Git_Areas_and_Stashing.md)
+    - References, Commits, Branches: [3-References_Commits_Branches.md](https://github.com/kelasol/advanced-git/blob/master/myNotes/3-References_Commits_Branches.md)
+    - Merging and Rebasing: [4-Merging_and_Rebasing.md](https://github.com/kelasol/advanced-git/blob/master/myNotes/4-Merging_and_Rebasing.md)
+    - History and Diffs: 
+    - Fixing Mistakes
+    - Rebase and Amend:
+    - Forks & Remote Repos
+    - Danger Zone
+    - Github
+    - Advanced Github:
+    - Wrapping Up:
+    - **self-assessment**
+       - Git Foundations: [1-SA-git-foundations.md](https://github.com/kelasol/advanced-git/blob/master/myNotes/self-assessment/1-SA_git-foundations.md)
+        - Git Areas and Stashing: [2-SA_Git_Areas_and_Stashing.md](https://github.com/kelasol/advanced-git/blob/master/myNotes/self-assessment/2-SA_Git_Areas_and_Stashing.md)
+        - References, Commits, Branches: [3-SA_References_Commits_Branches.md](https://github.com/kelasol/advanced-git/blob/master/myNotes/self-assessment/3-SA_References_Commits_Branches.md)
+        - Merging and Rebasing:  
+        - History and Diffs: 
+        - Fixing Mistakes
+        - Rebase and Amend:
+        - Forks & Remote Repos
+        - Danger Zone
+        - Github
+        - Advanced Github:
+        - Wrapping Up:
+
+# Class Info
 ## Resources
 
 All of the resources you need for class are located in this repository.
@@ -40,44 +83,3 @@ Find her on:
 
 Front End Masters [Video screencast](http://frontendmasters.com/workshops/git-indepth/)
 
-# Annotations
- The way that the rest of the personal notes are structured are by video section as organized by FEM. 
-
-## Completetion Status
-[Todo]
-[&#x2714; In Progress] 
-[In Review]
-[Complete]
-
-### Tasks
-- [ ] Phase 1: Finish watching and annotating course
-- [ ] Phase 2: Draft Self-Assessment docs and Scoresheets
-- [ ] Phase 3: Review 
-
-## Table of Contents
-- **myNotes**
-    - Git Foundations: [git-foundations.md](https://github.com/kelasol/advanced-git/blob/master/myNotes/1-git-foundations.md)
-    - Git Areas and Stashing:  
-    - References, Commits, Branches: references-
-    - Merging and Rebasing:  
-    - History and Diffs: 
-    - Fixing Mistakes
-    - Rebase and Amend:
-    - Forks & Remote Repos
-    - Danger Zone
-    - Github
-    - Advanced Github:
-    - Wrapping Up:
-    - **self-assessment**
-       - Git Foundations: [SA-git-foundations.md](https://github.com/kelasol/advanced-git/blob/master/myNotes/self-assessment/1-SA_git-foundations.md)
-        - Git Areas and Stashing:  
-        - References, Commits, Branches: references-
-        - Merging and Rebasing:  
-        - History and Diffs: 
-        - Fixing Mistakes
-        - Rebase and Amend:
-        - Forks & Remote Repos
-        - Danger Zone
-        - Github
-        - Advanced Github:
-        - Wrapping Up:
