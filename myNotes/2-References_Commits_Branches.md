@@ -60,7 +60,30 @@ In practice lightweight tags not used too often in practice, more useful for you
     - Thew current branch pointer moves with every commit to the repository
 - **Tag**
     - The commit that a tag points doesn't change.
-    - It's a snapshot.
-    
+    - It's a snapshot!
+
 Two important pieces of info that separate what a tag is and what a branch is:
-- A branch, when you're on a branch, the current pointer, the branch pointer it moves with every new commit to the repository
+- A branch, when you're on a branch, the current pointer, the branch pointer it moves with every new commit to the repository. You use branches when your branch will change, when new commits will be added. Tags are a pointer to a commit, a snapshot, tags aren't meant to change. You tag v1 of your release. You don't move you tag to another commit.
+
+### Detached Head & Dangling Commits
+- Sometimes you need to checkout a specific commit (or tag) instead of a branch
+- git moves the HEAD pointer to that commit
+- as soon as you checkout a different branch or commit, the value of HEAD will point to the new SHA
+- There is no reference pointing to the commits you made in a detached state.
+![](https://user-images.githubusercontent.com/5563119/63643548-9093ca00-c687-11e9-8583-3ad33724aad9.png)
+
+### HEAD-LESS / Detached HEAD
+Save your work:
+- Create a new branch that points to the last commit you made in a detached state.
+    - `git branch < new-branch-name > < commit >`
+- Why the last commit?
+    - Because the other commits point to their parents. So we don't have to save all commits individually. 
+
+### Dangling Commits
+Discard your work:
+- If you don't point to a new branch at those commits, they will no longer be referenced in git (**dangling commits**).
+- Eventually, they will be garbage collected
+- Git does it's own garbage collection (runs every few weeks, can be run manually)
+- It's possible to recover these after GC (with ref logs, will talk about later)
+
+#### References Exercise 

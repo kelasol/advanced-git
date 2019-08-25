@@ -96,7 +96,7 @@ Remember how content informs the SHA. Well running that hash on the same content
 ![git pointers](https://user-images.githubusercontent.com/5563119/63214169-a3c3fa00-c0c9-11e9-9d93-660929d6b0db.png)
 What is the difference between the blob and the SHA that refers to it?
 
->  The difference between the blob and the SHA. Is that the blob is the content and the SHA is essentially the key for that piece of content. However, the key is stored within that blob that tells it what content to associate itself with. (I may be misunderstanding this)
+>  The difference between the blob and the SHA. Is that the blob is the content and the SHA is essentially the key for that piece of content. However, the key is stored within that blob that tells it what content to associate itself with. (I may be misunderstanding this last point.)
 
 ### Other Optimizations - Packfiles, Deltas
 - Git objects are compressed
@@ -142,7 +142,7 @@ You can also do it on commits. Commits again are just git objects.
 ### Why Can't We "Change" Commits? 
 - If you can change any data about the commit, the commit will have a new SHA1 hash.
 - Even if the files don't change, the created date will.
-- A great incidental security feature, because tampering with commit history would be very obvious. It will be exactly that same as when it was commited.
+- A great incidental security feature, because tampering with commit history would be very obvious. It's also helpful for us as devs because we can expect exactly the same data as when it was commited.
 
 ### References - Pointers to Commits
 **References are just pointers to commits**
