@@ -56,7 +56,7 @@ Front End Masters [Video screencast](http://frontendmasters.com/workshops/git-in
 
 ## Table of Contents
 - **myNotes**
-    - Git Foundations: [git-foundations.md](/)
+    - Git Foundations: [git-foundations.md](https://github.com/kelasol/advanced-git/blob/master/myNotes/1-git-foundations.md)
     - Git Areas and Stashing:  
     - References, Commits, Branches: references-
     - Merging and Rebasing:  
@@ -69,7 +69,7 @@ Front End Masters [Video screencast](http://frontendmasters.com/workshops/git-in
     - Advanced Github:
     - Wrapping Up:
     - **self-assessment**
-       - Git Foundations: [SA-git-foundations.md](/)
+       - Git Foundations: [SA-git-foundations.md](https://github.com/kelasol/advanced-git/blob/master/myNotes/self-assessment/1-SA_git-foundations.md)
         - Git Areas and Stashing:  
         - References, Commits, Branches: references-
         - Merging and Rebasing:  
