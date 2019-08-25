@@ -99,7 +99,7 @@ Sometimes system like this is called a content addressable system and that's bec
 <br>
 <details>
     <summary><b>What is a commit? What does it contain?</b></summary>
-    A commit is just a pointer to a tree. It like most other git objects, contains metadata. Things like : and contains metadata: author and committer, date, message, parent commit (one or more). The SHA1 of the commit is the hash of all this information.
+    A commit is just a pointer to a tree. It like most other git objects, contains metadata. Things like : author and committer, date, message, parent commit (one or more). The SHA1 of the commit is the hash of all this information.
 </details>
 
 <br>
@@ -124,8 +124,8 @@ Sometimes system like this is called a content addressable system and that's bec
 </details>
 
 <br>
-<details>
-    <summary><b>What are references? Why is changing a branch so fast in git?</b></summary> <br>
+<details> 
+    <summary><b>What are references? What are the three types of references? Why is changing a branch so fast in git?</b></summary> <br>
 <b>References are just pointers to commits</b>. Three types of references are... <br>
 - Tags<br>
 - Branches<br>
