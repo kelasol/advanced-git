@@ -26,8 +26,8 @@ The accompanying exercises for [Nina Zakharenko's](https://twitter.com/nnja) [Gi
     - Git Areas and Stashing: [2-SA_Git_Areas_and_Stashing.md](https://github.com/kelasol/advanced-git/blob/master/myNotes/2-Git_Areas_and_Stashing.md)
     - References, Commits, Branches: [3-References_Commits_Branches.md](https://github.com/kelasol/advanced-git/blob/master/myNotes/3-References_Commits_Branches.md)
     - Merging and Rebasing: [4-Merging_and_Rebasing.md](https://github.com/kelasol/advanced-git/blob/master/myNotes/4-Merging_and_Rebasing.md)
-    - History and Diffs: 
-    - Fixing Mistakes
+    - History and Diffs: [5-History_and_Diffs.md](https://github.com/kelasol/advanced-git/blob/master/myNotes/5-History_and_Diffs.md)
+    - Fixing Mistakes: [6-Fixing_Mistakes.md](https://github.com/kelasol/advanced-git/blob/master/myNotes/6-Fixing_Mistakes.md)
     - Rebase and Amend:
     - Forks & Remote Repos
     - Danger Zone

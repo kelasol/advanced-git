@@ -8,7 +8,7 @@
 ### Good Commits are Important
 - Good commits help perserve the history of a code base
 - They help with:
-    - debuggin & troubleshooting
+    - debugging & troubleshooting
     - creating release notes
     - code reviews
     - rolling back

@@ -1,7 +1,7 @@
 # Merging and Rebasing
 ## Merging and Fast Forward
 ### Under the Hood - Merge Commits are Just Commits
-- Merge commits are just commits, they just happen to have more than oen parent
+- Merge commits are just commits, they just happen to have more than one parent
 - I think in most modern Git workflows, most merge commits probably have two parents (possible to have 3,4+)
 - The Merge commit is just a marker of when a new feature merged into master
 ![](https://user-images.githubusercontent.com/5563119/63645157-bda6a380-c6ac-11e9-8898-7de974c5ca20.png)
@@ -31,8 +31,8 @@ This happens when we try to merge but our files have diverged and changes are no
 - next conflict: reuse the same resolution
 
 - useful for:
-    - long lived feature breanc (like a refactor)
-    - resbasing
+    - long lived feature branch (like a refactor)
+    - rebasing
 #### How do we use it? 
 Turn it on:
 - `git config rerere.enabled true`
@@ -41,14 +41,15 @@ Turn it on:
 - When you commit the conflict resolution, it's recorded, and says so in terminal:  
 `Recorded resolution for < feature name >`
 
-- The next time we have the same conflict, git will automatically apply the last resolution, but 
+- The next time we have the same conflict, git will automatically apply the last resolution, but will not stage it automatically so we the applied changes can first be reviewed.
 ![](https://user-images.githubusercontent.com/5563119/63650738-e6f21e80-c702-11e9-95f3-52689e3ec1ed.png)
 
 ## Merging and ReReRe Exercise
 - Nina like having ReReRe on on a project by project basis. Doesn't like having it on automatically (globally). If something does go wrong, Git does allow you to delete those saved resolutions.
 
 ## Merging and ReReRe Solution
-Note: If using CMDER for terminal. Instead of `git reset --hard HEAD^`you can use: `git reset --hard HEAD~1`. On Mac, `HEAD^` should work as expected.
+Note: If using CMDER for terminal. Instead of `git reset --hard HEAD^`you can use: `git reset --hard HEAD~1`. On Mac, `HEAD^` should work as expected. (You will learn in the next section or two the difference between ^ and ~)
+![](https://user-images.githubusercontent.com/5563119/63693243-65fd5a80-c7c8-11e9-8334-36e668760435.png)
 - Another neat trick is if you checkout between branches frequently.  
 `git checkout -`  
 This will checkout the last branch you were on, the previous branch using the -.
