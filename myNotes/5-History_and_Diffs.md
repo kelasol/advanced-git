@@ -61,13 +61,66 @@
 
 - `~` or `~n`
     - no args: `==~1`: the first commit back, following 1st parent
-    - n: number of commits back, following only 1st parent]
+    - n: number of commits back, following only 1st parent 
 
 note: ^ and ~ can be combined
 
+### Referencing Commits
+- Parent commits are ordered left to right
+- Nina uses ~ more than ^, but they are both very useful. 
+- This chart is worth studying, wanting to move 3-commits back you can use this reference methodology versus finding the commit # and then going back by that, you could just say like 
+![](https://user-images.githubusercontent.com/5563119/63693243-65fd5a80-c7c8-11e9-8334-36e668760435.png)
+- If you don't provide a number argument, it passes in 1 by default
 
 ## Git Show and Diffs
+### Git Show: Look at a Commit
+A really quick way to take a peet at another commit from the command line. It's a reference, and a super neat way to look at the contents of any commit. It can also show the contents of any commit that has been orphaned, a commit after a rebase or files in a detached head-state, so long as it's in our history we can take a look at it with `git show < commit >`. 
 
-## History and Diffs Exercise
+-show commit and contents
+    - `git show < commit >`
+- show files changed in commit:
+    -`git  show < commit >  --stat`
+- look at a file from another commit:
+    - `git show < commit >: < file >`
+
+### Diff 
+Diff is a common tool we use as developers
+- Diff shows you changes:
+    - between commits
+    - between the staging area and the respository
+    - what's in the working area
+
+- unstaged changes (what could be in the next commit)
+    - `git diff`
+- staged changes (what will be in the next commit)
+    - `git diff --staged`
+
+You can also pass in file arguments to narrow down which file you wanna look at the diff of.
+
+### Diff Commits and Branches
+![](https://user-images.githubusercontent.com/5563119/63693862-fc7e4b80-c7c9-11e9-841f-ab6f66f88da7.png)
+- Note that the default syntax of diff is the same as the two dot notation, `..`, so...  
+- `git diff A B` === `git diff A..B`
+- The diff between these branches will show you difference between the branches, so only the blue changes. 
+
+### "Diff" Branches
+It's also possible to so call, "diff" branches...
+- Which branches are merged with mastewr, and can be cleaned up?
+    - `git branch --merged master`
+
+We can also find out ...  
+- Which branches aren't merged with master yet?a
+    - `git branch --no-merged master`
 
 ## History and Diffs Solution
+ - the `-f` flag will force something
+ - if we run something like `git log --name-status --follow --oneline hello.template` we can see the tracked changes and name changes of a file. Notice the very first intial commit has the letter A next to it. A in this context is when the file was added. (Taking a closer look, it looks like commit with the renamed file starts with R and the rest of the files that just modifying start with M). 
+
+> git log --since="yesterday"  
+> git log --name-status --follow --oneline hello.template  
+> git log --grep="i18n" --author=kelasol --since=2.weeks  
+> git log --diff-filter=R --find-renames  
+> git log --diff-filter=M --oneline
+> git show 09ca68
+> git branch --merged master
+> git branch --no-merged mastwer
