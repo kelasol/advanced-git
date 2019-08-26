@@ -48,3 +48,7 @@ Turn it on:
 - Nina like having ReReRe on on a project by project basis. Doesn't like having it on automatically (globally). If something does go wrong, Git does allow you to delete those saved resolutions.
 
 ## Merging and ReReRe Solution
+Note: If using CMDER for terminal. Instead of `git reset --hard HEAD^`you can use: `git reset --hard HEAD~1`. On Mac, `HEAD^` should work as expected.
+- Another neat trick is if you checkout between branches frequently.  
+`git checkout -`  
+This will checkout the last branch you were on, the previous branch using the -.
