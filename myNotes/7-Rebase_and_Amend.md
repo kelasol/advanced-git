@@ -18,7 +18,7 @@ The reason you have different SHAS, is because commits can't be edited...
 - Imagine our tech_posts and master branch have diverged
 - We don't want a messy merge commit in our history
 - We can pull in all the latest changes from mastewr, and apply our commits on top of them by changing the parent commit of our commits.
-- **Rebase = Give a ccommit a new parent** (ie. a new base commit)
+- **Rebase = Give a commit a new parent** (ie. a new base commit)
 
 ### Rebase: Rewinding Ahead
 - The first thing that `rebase` does is it rewinds HEAD
