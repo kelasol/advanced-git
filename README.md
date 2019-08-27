@@ -9,6 +9,8 @@ The accompanying exercises for [Nina Zakharenko's](https://twitter.com/nnja) [Gi
 # Annotations
  Annotations can be found in the myNotes folder. Notes are organzied by video section as structured by FEM. 
 
+ Observation: To get the most out of this workshop I would highly recommend that you go through the exercises. The lectures are great for context and the slides are handy references, but a bulk of understanding through this course comes from reading and doing the exercises.
+
 ## Completetion Status
 [Todo]
 [&#x2714; In Progress] 
