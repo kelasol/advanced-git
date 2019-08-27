@@ -65,9 +65,83 @@ Replace the working area copy with the version from the current staging area.
 - Use the `--dry-run` flag to see what would be deleted
     - the `-f` flag to do the deletion
     - The `-d` flag will clean directories 
-
 ![](https://user-images.githubusercontent.com/5563119/63699287-5d5f5100-c7d5-11e9-9263-4812b3806c6e.png) 
 
+### Git Reset
+This is a big one, people tend to Google, how do I undo the last commit, and copy and paste the answer from stack overflow; but really understanding `git reset` will really supercharge your workflow.
+- Reset is another command that performs different actions depending on the argument.
+    - with a path
+    - without a path
+        - By default, git performs a `git reset -mixed`
+    - For commits:
+        - Moves the HEAD pointer, optionally modifies files
+- A big difference between `git reset` and `git checkout`, `git checkout` will move the HEAD but the branch stays where it was. `git reset` moves the HEAD and it'll move the branch reference, meaning your branch is now modified.
+- For file paths;
+    - Does not move the HEAD pointer, modifes files
+
+:star: There are three options for reset: soft, mixed (default), and hard.
+- soft tends not to be used very frequently.
+- again, mixed is the default, and hard is the proceed with caution one as it will blow away working area
+![](https://user-images.githubusercontent.com/5563119/63737884-b910f500-c83c-11e9-854b-23280bd7b826.png)
+I would actually, just go to this video on fem: Git Clean & Reset at the 4:49 timestamp to see the animation on the slides. It's helpful.
+
+### Git reset < commit > Cheat Sheet
+(1) Move HEAD and current branch  
+(2) Reset the staging area  
+(3) Reset the working area  
+
+`git reset --soft` = (1)  
+`git reset --mixed` = (1) & (2) (default)  
+`git reset --hard` = (1) & (2) & (3)  
+
+### Danger: Git reset can change history!
+A reset commit that has no references and work continued from a parent with a new commit, means that "dangling" commit is erased from history.
+Warning: Never push changed history to a shared or public repository!
+
+### Git reset -- < file >
+`git reset < file >` doesn't move the HEAD pointer, but it does the same thing as a mixed reset. Copies a file from the commit to the staging area.
+
+### Git reset < commit > -- < file >
+If we do it from a commit, same thing, I can say: `git reset < commit > -- < file >` put that file in my staging area.  
+
+### Git reset < commit > -- < file > Cheat Sheet
+~~(1) Moved HEAD and current branch~~  
+(2) Reset the staging area  
+~~(3) Reset the working area~~  
+
+It only does step (2).  
+This operation does not work with flags!
+
+### Undo a git reset with ORIG_HEAD
+- In case of an accidental `git reset -`  
+- Git keeps the previous value of HEAD in a variable called `ORIG_HEAD`  
+- To go back to the way things were:  
+    -`git reset ORIG_HEAD`
+
 ## Git Revert
+### Git Revert - The "Safe" Reset
+- The safe reset.
+- `git revert` creates a new commit that introduces the opposite changes from the specified commit.
+- The original commit stays in the repository
+
+-**Tip:**  
+    - Use revert if you're undoing a commit that has already been shared.
+    - Revert **does not** change history.
 
 ## Fixing Git Mistakes Solution
+
+### Summary: Common ways of undoing changes
+- `checkout`
+- `reset`
+- `revert`  
+Always revert for a shared repository, don't change history.
+
+`git checkout -- < filename >`  
+Is quite useful to just checkout a single file, and just revert to that file as it exists outside of the working area. 
+
+>fatal: ambiguous argument 'hello.template': unknown revision or path not in the working tree. Use '--' to separate paths from revisions, like this...
+This error message is what happens when you forget to specify the start of named arguments, you're missing the `--`
+
+You can you `-n 2` params with `git log`, for something like:  
+`git log -n 2 --oneline`  
+This will let you look at logged the last t

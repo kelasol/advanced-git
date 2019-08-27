@@ -1,4 +1,4 @@
-## Self-Assessment & Review of Git Foundations
+# Self-Assessment & Review of Git Foundations
 ---
 <details>
     <summary><b>How does Git Store Information? </b> </summary>

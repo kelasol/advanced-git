@@ -27,8 +27,8 @@
 - Good commit message
 - Encapsulates one logical idea
 - Doesn't introduce breaking changes
-    - i.e. tests passKv
-
+    - i.e. tests pass
+ 
 ## Git Log
 ### Git Log
 - `git log` - the baic command that shows you the history of your repository
@@ -50,9 +50,10 @@
 - Example
     - `git log --grep=mail -- author=nina --since=2.weeks`
 
-### git log diff-filter
+### git log --diff-filter
+- `git log --diff-filter=R`
 - Selectively include or exclude files that have been:
-- (A)dded, (D)eleted, (M)odified & More...
+- (A)dded, (D)eleted, (M)odified, (R)enamed & More...
 
 ### git log: referencing commits
 - `^` or `^n`
@@ -64,6 +65,43 @@
     - n: number of commits back, following only 1st parent 
 
 note: ^ and ~ can be combined
+
+#### From Stack Overflow
+I found this pretty great response on stack overflow:  
+**Rules of thumb**
+
+    Use ~ most of the time — to go back a number of generations, usually what you want
+    Use ^ on merge commits — because they have two or more (immediate) parents
+
+**Mnemonics:**
+
+    Tilde ~ is almost linear in appearance and wants to go backward in a straight line
+    Caret ^ sugge
+
+**Illustration:**  
+    Here is an illustration, by Jon Loeliger. Both commit nodes B and C are parents of commit node A. Parent commits are ordered left-to-right.
+
+    G   H   I   J
+     \ /     \ /
+      D   E   F
+       \  |  / \
+        \ | /   |
+         \|/    |
+          B     C
+           \   /
+            \ /
+             A
+
+    A =      = A^0
+    B = A^   = A^1     = A~1
+    C = A^2
+    D = A^^  = A^1^1   = A~2
+    E = B^2  = A^^2
+    F = B^3  = A^^3
+    G = A^^^ = A^1^1^1 = A~3
+    H = D^2  = B^^2    = A^^^2  = A~2^2
+    I = F^   = B^3^    = A^^3^
+    J = F^2  = B^3^2   = A^^3^2
 
 ### Referencing Commits
 - Parent commits are ordered left to right
