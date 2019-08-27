@@ -18,7 +18,7 @@ The accompanying exercises for [Nina Zakharenko's](https://twitter.com/nnja) [Gi
 [Complete]
 
 ### Tasks
-- [ ] Phase 1: Finish watching and annotating course
+- [x] Phase 1: Finish watching and annotating course
 - [ ] Phase 2: Draft Self-Assessment docs and Scoresheets
 - [ ] Phase 3: Review 
 
@@ -30,12 +30,10 @@ The accompanying exercises for [Nina Zakharenko's](https://twitter.com/nnja) [Gi
     - Merging and Rebasing: [4-Merging_and_Rebasing.md](https://github.com/kelasol/advanced-git/blob/master/myNotes/4-Merging_and_Rebasing.md)
     - History and Diffs: [5-History_and_Diffs.md](https://github.com/kelasol/advanced-git/blob/master/myNotes/5-History_and_Diffs.md)
     - Fixing Mistakes: [6-Fixing_Mistakes.md](https://github.com/kelasol/advanced-git/blob/master/myNotes/6-Fixing_Mistakes.md)
-    - Rebase and Amend:
-    - Forks & Remote Repos
-    - Danger Zone
-    - Github
-    - Advanced Github:
-    - Wrapping Up:
+    - Rebase and Amend:[7-Rebase_and_Amend.md](https://github.com/kelasol/advanced-git/blob/master/myNotes/7-Rebase_and_Amend.md)
+    - Forks & Remote Repos: [8-Forks_and_Remote_Repos.md](https://github.com/kelasol/advanced-git/blob/master/myNotes/8-Forks_and_Remote_Repos.md)
+    - Danger Zone: [9-Danger_Zone.md](https://github.com/kelasol/advanced-git/blob/master/myNotes/9-Danger_Zone.md)
+    - Github: [10-Github.md](https://github.com/kelasol/advanced-git/blob/master/myNotes/10_Github.md)
     - **self-assessment**
        - Git Foundations: [1-SA-git-foundations.md](https://github.com/kelasol/advanced-git/blob/master/myNotes/self-assessment/1-SA_git-foundations.md)
         - Git Areas and Stashing: [2-SA_Git_Areas_and_Stashing.md](https://github.com/kelasol/advanced-git/blob/master/myNotes/self-assessment/2-SA_Git_Areas_and_Stashing.md)
