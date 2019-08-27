@@ -45,8 +45,6 @@ The accompanying exercises for [Nina Zakharenko's](https://twitter.com/nnja) [Gi
         - Forks & Remote Repos
         - Danger Zone
         - Github
-        - Advanced Github:
-        - Wrapping Up:
 
 # Class Info
 ## Resources

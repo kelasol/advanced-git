@@ -29,8 +29,8 @@ Github real key driver to open source accessibilty.
 
 ### Clone Repository git clone
 - We make a copy called a clone on the local machine.
-- origin is the default name given  
-- all git command , push ,pull all work on _origin_
+- `origin` is the default name given  
+- all git commands: push ,pull all work on _origin_
 
 ### Viewing Remotes
 `git remote -v`
@@ -51,12 +51,12 @@ Will help you view what your remotes are,.
     - edit code
     - can edit your own copy 
 
-### Mergint Changes to ORiginal Project From A Fork
-Say you've forked something and made changes, now you want to apply those changes to the origin project, you do so with a **pull request**. A pull request is saying, *knock, knock*, hello mainter of this project. I've made these really cool changes, you should apply them because they improve upon the original.
+### Merging Changes to Original Project From A Fork
+Say you've forked something and made changes, now you want to apply those changes to the origin project, you do so with a **pull request**. A pull request is saying, *::knock, knock::*, hello mainter of this project. I've made these really cool changes, you should apply them because they improve upon the original.
 
 ### Staying up to Date
 - While you work on your fork, other changes are getting merged into the source repository.
-- In order to stay up to date, set up an **upstream**
+- In order to stay up to date, set up an **upstream**.
 
 ### Upsteam 
 - The upstream repository is the base repository you created a fork from.
@@ -89,7 +89,7 @@ Say you've forked something and made changes, now you want to apply those change
 By default, git doesn't really show you any interesting information about what upstream branches are tracking, so a useful command that is useful:
 
 `git branch -vv`
-`>> *mastwer bbeb1c32 [ origin/master: behind 124 ] Merge branch 'master' of... `
+`>> *master bbeb1c32 [ origin/master: behind 124 ] Merge branch 'master' of... `
 The `-vv` flag will show you which remote branch you're tracking on your local branch. Very useful information.
 - It will also show you how many commits you are ahead or behind.
 - In the example above: `origin/master` = which upstream branch is being tracked  
