@@ -5,9 +5,10 @@
 - Amend is a quick and easy shortcut that lets you make changes to the previous commit.
 ![](https://user-images.githubusercontent.com/5563119/63740220-fb3e3480-c844-11e9-87e3-9f458fd510f0.png)
 The reason you have different SHAS, is because commits can't be edited...
+- An amend is king of like a mini rebase
 
 ### Commits Can't be Edited!
-- Rember, commits can't be edited!
+- Remember, commits can't be edited!
 - A commit is referenced by the SHA of all its data.
 - Even if the tree the commit points to is the same, and the author is the same, the date is still different!
 - A new commit is created
